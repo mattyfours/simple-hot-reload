@@ -1,0 +1,25 @@
+{
+  "standard.engine": "standard",
+  "standard.run": "onType",
+  "javascript.format.enable": false,
+  "javascript.validate.enable": false,
+  "standard.enable": true,
+  "standard.usePackageJson": true,
+  "standard.autoFixOnSave": true,
+  "standard.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.stylelint": "explicit"
+  },
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": false,
+    "strings": true
+  },
+  "editor.formatOnSave": false,
+  "eslint.workingDirectories": ["./sanity"]
+}

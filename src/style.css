@@ -1,0 +1,90 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: white;
+
+}
+
+header img {
+  width: var(--header-logo-width);
+  opacity: 0;
+}
+
+.promobar {
+  padding: 5px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: white;
+}
+
+.image-holder {
+  padding: 20px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+animated-header-image {
+  display: block;
+  position: fixed;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+animated-header-image img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  min-width: var(--header-logo-width);
+  max-width: 90%;
+  opacity: 0;
+}
+
+.visible {
+  opacity: 1;
+}
+
+
+main {
+  display: block;
+  background-color: black;
+  min-height: 100vh;
+}
+
+section {
+  display: block;
+  width: 100%;
+  height: 90vh;
+  background-color: #ccc;
+}
+
+section:first-of-type {
+  background-image: url('https://kwiazurecdn.azureedge.net/images/resized/1400/sitefiles/oscar/category/2365/05082024121841-2365.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+section:nth-child(odd) {
+  background-color: #333;
+}
