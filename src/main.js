@@ -93,8 +93,6 @@ class HHAnimatedHeaderImage extends HTMLElement {
 
     const adjustedPercent = (1 - Math.pow(1 - sectionScrollPercent * 0.01, 15)) * 100
 
-    console.log(sectionScrollPercent, adjustedPercent)
-
     const adjustedWidth = adjustedPercent <= 0
       ? this.startingWidth
       : adjustedPercent >= 100
